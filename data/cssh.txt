@@ -1,0 +1,10 @@
+﻿
+   <h3>陳氏書號</h3>
+    <p><br/>
+    中華建統&nbsp;&nbsp;&nbsp;&nbsp;景運煥新&nbsp;&nbsp;&nbsp;&nbsp;
+    欽崇正教&nbsp;&nbsp;&nbsp;&nbsp;紹逑先民<br/>
+    文治開化&nbsp;&nbsp;&nbsp;&nbsp;至道同仁&nbsp;&nbsp;&nbsp;&nbsp;
+    育材興學&nbsp;&nbsp;&nbsp;&nbsp;康樂和親 <br/>
+    創垂綿繼&nbsp;&nbsp;&nbsp;&nbsp;卓立秉鈞&nbsp;&nbsp;&nbsp;&nbsp;
+    武威安遠&nbsp;&nbsp;&nbsp;&nbsp;英達威遵
+    </p>

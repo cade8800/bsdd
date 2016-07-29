@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+
+        保生大帝灵应签
+
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/x-icon" href="#">
+
+    <!-- Jquery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        Xmlconfig="data/xml/bsdd.xml";
+        PageConfig="data/";
+        function LoadPage(name) {
+            var page=PageConfig+name+".txt";
+            $("#content").load(page);
+        }
+
+        //获取Get参数
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]);
+            return null; //返回参数值
+        }
+
+        //获取目录
+        function GetDirectory() {
+            $.get(Xmlconfig, function (data) {
+                var con = "";
+                var thtml = "";
+                var i, j;
+                for (j = 1; j <= 66; j++) {
+                    for (i = 0; i < 4; i++) {
+                        con = $(data).find('Worksheet').find('Table').find('Row').eq(i).find('Cell').eq(j).find('Data:eq(0)').text();
+
+                        if (i == 0) {
+                            thtml += "<h3><a href='?id=" + j + "'>第" + con + "号&nbsp;&nbsp;";
+                        }
+                        if (i == 1) {
+                            thtml += con + "</a></h3><span class='post-date'>";
+                        }
+                        if (i == 2) {
+                            thtml += con + "</span><blockquote><p >";
+                        }
+                        if (i == 3) {
+                            thtml += con + "</p></blockquote>";
+                        }
+                    }
+                }
+                $("#content").append(thtml);
+            });
+        }
+
+        //通过ID获取内容
+        function GetContentById(uid) {
+            $.get(Xmlconfig, function (data) {
+                var thtml = "";
+                var con = "";
+                var title = "";
+                $("#content").empty();
+                for (var i = 0; i <= $(data).find('Worksheet').find('Table').find('Row').length; i++) {
+                    title = $(data).find('Worksheet').find('Table').find('Row').eq(i).find('Cell').eq(0).find('Data:eq(0)').text();
+                    con = $(data).find('Worksheet').find('Table').find('Row').eq(i).find('Cell').eq(uid).find('Data:eq(0)').text();
+
+                    if (i == 0) {
+                        thtml += "<h3><a href='?id=" + uid + "'>第" + uid + "号&nbsp;&nbsp;";
+                    } else if (i == 1) {
+                        thtml += con + "</a></h3><span class='post-date'>";
+                    } else if (i == 2) {
+                        thtml += con + "</span><blockquote><p >";
+                    } else if (i == 3) {
+                        thtml += con + "</p></blockquote>";
+                    } else {
+                        thtml += "<h3>" + title + "</h3>" + con;
+                    }
+
+                }
+                $("#content").append(thtml);
+            });
+        }
+
+        $(function () {
+            var page = getUrlParam("page");
+            var urlid = getUrlParam("id");
+            switch (page) {
+                case"cssh":
+                    LoadPage("cssh");
+                    break;
+                case"cszh":
+                    LoadPage("cszh");
+                    break;
+                case"ddzy":
+                    LoadPage("ddzy");
+                    break;
+                case"lqml":
+                    GetDirectory();
+                    break;
+                case"gmbj":
+                    LoadPage("gmbj");
+                    break;
+                case"about":
+                    LoadPage("about");
+                    break;
+                default:
+                    GetDirectory();
+            }
+            if (urlid != "" && urlid != null) {
+                GetContentById(urlid);
+            }
+        });
+
+    </script>
+
+</head>
+<body>
+
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+ styles, `#sidebar-checkbox` for behavior. -->
+<input class="sidebar-checkbox" id="sidebar-checkbox" type="checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-item">
+        <p>保生大帝灵应签</p>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a id="post" class="sidebar-nav-item" href="?page=cssh">陳氏書號</a>
+        <a class="sidebar-nav-item" href="?page=cszh">陳氏族號</a>
+        <a class="sidebar-nav-item" href="?page=ddzy">大帝老爺咒語</a>
+        <a class="sidebar-nav-item" href="?page=lqml">靈應簽目錄</a>
+        <a class="sidebar-nav-item" href="?page=gmbj">重建真君古廟碑记</a>
+        <a class="sidebar-nav-item" href="?page=about">关于</a>
+    </nav>
+
+    <div class="sidebar-item">
+        <p>兩英鎮金甌鄉慈濟理事會<br>0758-85612262</p>
+        <p>
+            © 2016. All rights reserved.
+        </p>
+    </div>
+</div>
+
+<!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+     content to avoid any CSS collisions with our real content. -->
+<div class="wrap">
+    <div class="masthead">
+        <div class="container">
+            <h3 class="masthead-title">
+                <a href="/" title="Home">保生大帝灵应签</a>
+                <!--<small>On Coding</small>-->
+            </h3>
+        </div>
+    </div>
+
+    <div id="content" class="container content">
+        <!-- content -->
+
+
+        <!-- // content -->
+    </div>
+</div>
+
+<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+</body>
+</html>
