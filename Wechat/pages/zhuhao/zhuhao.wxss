@@ -1,0 +1,15 @@
+/* zhuhao.wxss */
+.view {
+    padding: 15px;
+}
+
+.title {
+    font-weight: 400;
+    color: #313131;
+    font-size:24px;
+}
+
+.content {
+    color: #515151;
+    font-size:18px;
+}

@@ -1,0 +1,17 @@
+/**app.wxss**/
+@import 'weui.wxss';
+page{
+  height: 100%;
+}
+.container {
+  /**height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;**/
+  padding:50rpx 0;
+  /* background-color: #f8f8f8; */
+  background:-webkit-linear-gradient(left, #464f76, #553a65, #6c3c4a, #683a4a);
+  height: 100%;
+} 

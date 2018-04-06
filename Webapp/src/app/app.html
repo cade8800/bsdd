@@ -1,0 +1,26 @@
+<ion-menu [content]="content" type='push'>
+    <!-- <ion-header>
+        <ion-toolbar>
+            <ion-title>保生大帝灵应签</ion-title>
+        </ion-toolbar>
+    </ion-header> -->
+
+    <ion-content class='menu_content'>
+        <div class="title">保生大帝灵应签</div>
+
+        <div menuClose *ngFor="let p of pages" (click)="openPage(p)" class="menu_item">{{p.title}}</div>
+
+        <!-- <ion-list>
+            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">{{p.title}}</button>
+        </ion-list> -->
+
+        <p>潮邑金甌乡保生大帝老爷签文</p>
+        <p>© 2016. All rights reserved.</p>
+        <p><img src="/assets/imgs/gh_425d97d2031a_258.jpg"></p>
+
+    </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,18 @@
+/* guanyu.wxss */
+.view_title{
+    padding: 15px;
+}
+.view_content{
+    padding:3px 15px;
+}
+
+.title {
+    font-weight: 400;
+    color: #313131;
+    font-size:24px;
+}
+
+.content {
+    color: #515151;
+    font-size:18px;
+}

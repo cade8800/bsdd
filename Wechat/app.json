@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mulu/mulu",
+    "pages/guanyu/guanyu",
+    "pages/beiji/beiji",
+    "pages/shuhao/shuhao",
+    "pages/zhuhao/zhuhao",
+    "pages/zhouyu/zhouyu",
+    "pages/qian/qian"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#683a4a",
+    "navigationBarTitleText": "保生大帝灵应签",
+    "navigationBarTextStyle": "#fff"
+  }
+}

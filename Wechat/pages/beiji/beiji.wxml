@@ -1,0 +1,7 @@
+<!--beiji.wxml-->
+<view class='view'>
+    <text class='title'>{{title}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{content}}</text>
+</view>

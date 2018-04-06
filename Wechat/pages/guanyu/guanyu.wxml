@@ -1,0 +1,22 @@
+<!--guanyu.wxml-->
+<view class='view_title'>
+    <text class='title'>关于</text>
+</view>
+<view class='view_content'>
+    <text class='content'>1.本小程序为本人业余所作，旨在方便乡人。网站地址：http://bsdd.me</text>
+</view>
+<view class='view_content'>
+    <text class='content'>2.本站内容均来自签本及碑记所载，为本人手工录入，如有纰漏请与我联系。</text>
+</view>
+<view class='view_content'>
+    <text class='content'>3.如果您觉得本小程序还不错，请把它推荐给更多的人。</text>
+</view>
+
+
+
+<view class='view_title'>
+    <text class='title'>联系</text>
+</view>
+<view class='view_content'>
+    <button open-type="contact">进入客服会话</button>
+</view>

@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar color='white'>
+        <button ion-button menuToggle>
+              <ion-icon name="menu"></ion-icon>
+            </button>
+        <ion-title>保生大帝灵应签</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-searchbar animated='true' placeholder='搜索' (ionInput)="select($event)" (ionClear)="clearKey($event)">
+    </ion-searchbar>
+    <div padding>
+        <div class="qian" *ngFor='let item of qianList'>
+            <h3 (click)='detail(item.QianHao)' class="article_title">第{{item.QianHao}}号 {{item.ShiTi}}</h3>
+            <p class="article_content guaxiang">{{item.GuaXiang}}</p>
+            <p class="article_content shi">{{item.ShiYue}}</p>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-navbar color='white'>
+        <button ion-button menuToggle>
+              <ion-icon name="menu"></ion-icon>
+            </button>
+        <ion-title>保生大帝灵应签</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <h3 class="article_title">{{data.Title}}</h3>
+    <p class="article_content" [innerHtml]='data.Content'></p>
+</ion-content>

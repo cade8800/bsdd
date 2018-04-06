@@ -1,0 +1,18 @@
+<!--mulu.wxml-->
+
+
+<view class="section">
+  <input bindinput='select' class='key' placeholder-class='key_holder' type='text' placeholder="搜索" confirm-type='search' />
+</view>
+
+
+
+
+<view class='view_item' wx:for='{{qianList}}'>
+    <navigator url='/pages/qian/qian?id={{item.QianHao}}' class='title'>
+        <div class='qianhao'>第{{item.QianHao}}号</div>
+        <div class='shiti'>{{item.ShiTi}}</div>
+    </navigator>
+    <view wx:if='{{item.GuaXiang}}' class='guaxiang'>{{item.GuaXiang}}</view>
+    <view class='shi'>{{item.ShiYue}}</view>
+</view>

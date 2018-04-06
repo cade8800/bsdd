@@ -1,0 +1,43 @@
+/* qian.wxss */
+
+.view_item {
+    padding: 15px;
+}
+
+.view_item .title {
+    color: #6a9fb5;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.qianhao {
+    margin-right: 8px;
+}
+
+.guaxiang {
+    color: #9a9a9a;
+    font-size: 16px;
+}
+
+.shi {
+    color: #7a7a7a;
+    font-size: 16px;
+    border-left: .25rem solid #e5e5e5;
+    padding-left: 16px;
+    margin-top: 8px;
+}
+
+.view {
+    padding: 0px 15px 5px 15px;
+}
+
+.title {
+    font-weight: 400;
+    color: #313131;
+    font-size: 1.25rem;
+}
+
+.content {
+    color: #515151;
+    font-size: 16px;
+}

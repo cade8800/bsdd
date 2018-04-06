@@ -1,0 +1,185 @@
+<!--qian.wxml-->
+
+<view class='view_item'>
+    <view url='/pages/qian/qian?id={{qian.QianHao}}' class='title'>
+        <div class='qianhao'>第{{qian.QianHao}}号</div>
+        <div class='shiti'>{{qian.ShiTi}}</div>
+    </view>
+    <view wx:if='{{qian.GuaXiang}}' class='guaxiang'>{{qian.GuaXiang}}</view>
+    <view class='shi'>{{qian.ShiYue}}</view>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.JiaMengText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.JiaMeng}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.SuiJunText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.SuiJun}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.QiuCaiText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.QiuCai}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.HunYanText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.HunYan}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.LiuJiaText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.LiuJia}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.FengShanText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.FengShan}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.XingZouText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.XingZou}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.ShengYiText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.ShengYi}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.ShiWuText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.ShiWu}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.GongMingText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.GongMing}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.DongQingText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.DongQing}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.ShuSongText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.ShuSong}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.QianXiText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.QianXi}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.YuShuiText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.YuShui}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.XingRenText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.XingRen}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.MiJiaText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.MiJia}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.ChuWaiText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.ChuWai}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.XunRenText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.XunRen}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.MouShiText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.MouShi}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.JiBinText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.JiBin}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.LiuChuText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.LiuChu}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.HeHuoText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.HeHuo}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.JuHuoText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.JuHuo}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.JiaWuText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.JiaWu}}</text>
+</view>
+
+<view class='view'>
+    <text class='title'>{{qian.YinXingText}}</text>
+</view>
+<view class='view'>
+    <text class='content'>{{qian.YinXing}}</text>
+</view>

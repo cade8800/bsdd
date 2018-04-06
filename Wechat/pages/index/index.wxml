@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+
+    <navigator url='/pages/mulu/mulu' hover-class='menu_hover' class='menu'>靈應簽目錄</navigator >
+    <navigator url='/pages/shuhao/shuhao' hover-class='menu_hover' class='menu'>陳氏書號</navigator>
+    <navigator url='/pages/zhuhao/zhuhao' hover-class='menu_hover' class='menu'>陳氏族號</navigator>
+    <navigator url='/pages/zhouyu/zhouyu' hover-class='menu_hover' class='menu'>大帝老爺咒語</navigator>
+    <navigator url='/pages/beiji/beiji' hover-class='menu_hover' class='menu'>重建真君古廟碑记</navigator>
+    <navigator url='/pages/guanyu/guanyu' hover-class='menu_hover' class='menu'>关于</navigator>
+
+</view>
